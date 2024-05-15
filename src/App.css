@@ -1,38 +1,205 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App{
+  height: 100vh;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  position: relative;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  padding-left: 50px;
+  padding-right: 50px;
+  color: rgb(0, 0, 0);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header .logo {
+  width: 210px;
+  height: 48px;
+}
+.header .logo img {
+  width: 100%;
+  height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.header ul li a {
+  width :122px;
+  height: 40px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  border-radius: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.header ul li a:hover {
+  background: #01F0D0 0% 0% no-repeat padding-box;
+}
+
+.header ul li a.active {
+  background: #01F0D0 0% 0% no-repeat padding-box;
+}
+
+.header ul li a img{
+  width: 17px;
+  height: 17px;
+}
+
+.header .profile {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.header .profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.header .profile span {
+  font-size: 15px;
+}
+
+
+.profile .profile-info{
+  height: 100%;
+  min-width: 150px;
+  font-size: 15px;
+}
+.profile .profile-info .name{
+  font-size: 13px;
+  color: #000000;
+  font-weight: 700;
+}
+.profile .profile-info .role{
+  font-size: 13px;
+  color: #707070;
+}
+
+.profile-setting {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:5px;
+
+}
+.profile-setting button{
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.profile-setting button .setting_img , .more{
+  width: 20px;
+  height: 20px;
+}
+
+.profile-setting button .setting_img img{
+  width: 100%;
+  height: 100%;
+}
+
+.profile-setting button .more img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.main {
+  display: flex;
+}
+
+#patients_list {
+  max-height: 100%;
+  position: relative;
+  width :20rem;
+}
+#diagnosis{
+  position: relative;
+  width: calc(100vw - 40rem);
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
+
+}
+.diagnosis_hist_title{
+  width: 100%;
+  text-align: left;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.diagnosis_cards_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.diagnosis_card{
+  width:200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  cursor: pointer;
+  gap: 5px;
+  padding: 20px;
+  border-radius: 20px;
+  background: #E0F3FA 0% 0% no-repeat padding-box;
 }
+
+#card2{
+  background: #FFE6E9 0% 0% no-repeat padding-box;
+}
+
+#card3{
+  background: #FFE6F1 0% 0% no-repeat padding-box;
+}
+
+.diagnosis_card_img_cont {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.diagnosis_card_img_cont img{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+#patients_profile{
+  position: relative;
+  width: 20rem;
+  height: 100%;
+
+}
+
