@@ -1,5 +1,10 @@
 import React from 'react'
 import '../styles/PatientProfile.css'
+import PhoneIcon from '../assets/PhoneIcon.png'
+import FemaleIcon from '../assets/FemaleIcon.png'
+import InsuranceIcon from '../assets/InsuranceIcon.png'
+import BirthIcon from '../assets/BirthIcon.png'
+
 function PatientProfile(prop) {
     return (
         <div className="patient-profile">
@@ -13,7 +18,7 @@ function PatientProfile(prop) {
                 <div className="patient-profile-body-left">
                     <div className="patient-profile-body-left-info">
                         <div className="patient-profile-body-left-info-row-icon">
-                            <img src="https://via.placeholder.com/20" alt="icon" />
+                            <img src={BirthIcon} alt="icon" />
                         </div>
                         <div className="patient-profile-body-left-info-row">
                             <h5 className='body_key'>Date Of Birth</h5>
@@ -23,7 +28,7 @@ function PatientProfile(prop) {
                     <div className="patient-profile-body-left-info">
 
                         <div className="patient-profile-body-left-info-row-icon">
-                            <img src="https://via.placeholder.com/20" alt="icon" />
+                            <img src={FemaleIcon} alt="icon" />
                         </div>
                         <div className="patient-profile-body-left-info-row">
                             <h5 className='body_key'>Gender</h5>
@@ -33,7 +38,7 @@ function PatientProfile(prop) {
 
                     <div className="patient-profile-body-left-info">
                         <div className="patient-profile-body-left-info-row-icon">
-                            <img src="https://via.placeholder.com/20" alt="icon" />
+                            <img src={PhoneIcon} alt="icon" />
                         </div>
                         <div className="patient-profile-body-left-info-row">
                             <h5 className='body_key'>Contact Info</h5>
@@ -42,7 +47,7 @@ function PatientProfile(prop) {
                     </div>
                     <div className="patient-profile-body-left-info">
                         <div className="patient-profile-body-left-info-row-icon">
-                            <img src="https://via.placeholder.com/20" alt="icon" />
+                            <img src={PhoneIcon} alt="icon" />
                         </div>
                         <div className="patient-profile-body-left-info-row">
                             <h5 className='body_key'>Emergency Contacts</h5>
@@ -52,10 +57,10 @@ function PatientProfile(prop) {
                     <div className="patient-profile-body-left-info">
 
                         <div className="patient-profile-body-left-info-row-icon">
-                            <img src="https://via.placeholder.com/20" alt="icon" />
+                            <img src={InsuranceIcon} alt="icon" />
                         </div>
                         <div className="patient-profile-body-left-info-row">
-                            <h5 className='body_key'>Address</h5>
+                            <h5 className='body_key'>Insurance Provider</h5>
                             <h5 className='body_value'>{prop?.patient?.insurance_type}</h5>
                         </div>
                     </div>

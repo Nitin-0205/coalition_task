@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 .App{
-  height: 100vh;
+  height: 100%;
   width: 100%;
 }
 
@@ -18,6 +18,9 @@
   padding-left: 50px;
   padding-right: 50px;
   color: rgb(0, 0, 0);
+  background-color: #fff;
+  border-radius: 2rem;
+  margin: 1rem;
 }
 
 .header .logo {
@@ -107,6 +110,7 @@
   outline: none;
   border: none;
   cursor: pointer;
+  background-color: transparent;
 }
 
 .profile-setting button .setting_img , .more{
@@ -143,6 +147,10 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
+  background-color: #fff;
+  margin: 0 1rem 1rem 1rem;
+  border-radius: 1rem;
+  padding: 1rem;
 
 }
 .diagnosis_hist_title{
@@ -153,21 +161,22 @@
 
 .diagnosis_cards_container {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
 }
 
 .diagnosis_card{
-  width:200px;
-  height: 200px;
+  width:170px;
+  height: 170px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   cursor: pointer;
   gap: 5px;
-  padding: 20px;
+  padding: 10px 20px 10px 20px;
   border-radius: 20px;
   background: #E0F3FA 0% 0% no-repeat padding-box;
 }
@@ -178,6 +187,12 @@
 
 #card3{
   background: #FFE6F1 0% 0% no-repeat padding-box;
+}
+
+.diagnosis_card .card_contxt{
+  font-size: 13px;
+  margin-top: 0.6rem;
+
 }
 
 .diagnosis_card_img_cont {
@@ -198,7 +213,7 @@
 
 #patients_profile{
   position: relative;
-  width: 20rem;
+  width: 18rem;
   height: 100%;
 
 }

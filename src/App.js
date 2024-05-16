@@ -10,6 +10,9 @@ import Profileimg from './assets/profile.png'
 import Setting from './assets/setting.png'
 import More from './assets/more_vert.png'
 import PatientsList from './components/PatientsList';
+import HeartRateIcon from './assets/HeartBPM.png'
+import TemperatureIcon from './assets/temperature.png'
+import RespiratoryRateIcon from './assets/respiratory.png'
 import { useState } from 'react';
 import PatientProfile from './components/PatientProfile';
 
@@ -94,27 +97,27 @@ function App() {
           <div className='diagnosis_cards_container'>
             <div className='diagnosis_card' id='card1'>
               <div className='diagnosis_card_img_cont'>
-                <img src='https://via.placeholder.com/50' alt='icon' />
+                <img src={RespiratoryRateIcon} alt='icon' />
               </div>
               <p>Respiratory Rate</p>
               <h2>20 bps</h2>
-              <p>Normal</p>
+              <p className='card_contxt'>Normal</p>
             </div>
             <div className='diagnosis_card' id='card2'>
               <div className='diagnosis_card_img_cont'>
-                <img src='https://via.placeholder.com/50' alt='icon' />
+                <img src={TemperatureIcon} alt='icon' />
               </div>
               <p>Temperature</p>
               <h2>98.6°F</h2>
-              <p>Normal</p>
+              <p className='card_contxt'>Normal</p>
             </div>
             <div className='diagnosis_card' id='card3'>
               <div className='diagnosis_card_img_cont'>
-                <img src='https://via.placeholder.com/50' alt='icon' />
+                <img src={HeartRateIcon} alt='icon' />
               </div>
               <p>Heart Rate</p>
               <h2>78 bpm</h2>
-              <p>Lower than Average</p>
+              <p className='card_contxt'>Lower than Average</p>
             </div>
           </div>
         </div>
